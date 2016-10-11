@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>First Form</title>
+    </head>
+    <body>
+        <article>
+            <header>
+                <h1>This is Header</h1>
+            </header>
+            <section>
+                <form>
+                    <label for="fName">First Name:</label>
+                    <input type="text" id="fName"/>
+                    <br/>
+                    <label for="lName">Last Name:</label>
+                    <input type="text" id="lName"/>
+                    <br/>
+                    <label for="email">First Name:</label>
+                    <input type="text" id="email"/>
+                    <br/>
+                    <input type="radio" id="male" name="gender" value="Male"/>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="FeMale"/>
+                    <label for="female">Female</label>
+                    <br/>
+                    <label for="subj">Subjects:</label>
+                    <input list="subjects" id="subj"/>
+                    <datalist id="subjects">
+                        <option value="UI"></option>
+                        <option value="Java"></option>
+                        <option value="Dot Net"></option>
+                    </datalist>
+                    <br/>
+                    <input type="submit"/>
+
+                </form>
+            </section>
+            <footer>
+                <h3>This is footer</h3>
+            </footer>
+        </article>
+
+    </body>
+</html>
