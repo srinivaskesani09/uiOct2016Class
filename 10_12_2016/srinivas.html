@@ -1,0 +1,93 @@
+<!-- Main document of the web page -->
+<!DOCTYPE html>
+
+<!-- Html default language set to english -->
+<html lang="en">
+
+    <!-- head- this is head of the web page -->
+    <head>
+        <!-- title- This is title of this html page-->
+        <title>Employee Form</title>
+        <!-- style- this is used to write styles in html page itself -->
+        <style>
+
+        </style>
+        <!-- script- this is used to write javascript code in html page itself -->
+        <script>
+
+        </script>
+        <!-- link- this is used to link an external source -->
+        <!-- below link is for bootstrap, this is for pre defined styling from external source -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <!-- base- this is used to specify the URL of the web page -->
+        <base href=""/>
+        <!--meta - this is used to describe more mata information which are not covered by the above five-->
+        <!--below line describes what character set is set to be -->
+        <meta charset="UTF-8">
+        <!-- below line gives the decription of the html web page-->
+        <meta name="description" content="This is employment form"/>
+        <!-- below key words used for search engines-->
+        <meta name="keywords" content="EMP, employee, form"/>
+        <!-- below line used for responsive design-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <!-- body of the page -->
+    <body>
+        <!-- This is main article for employee form -->
+        <article>
+            <!-- Page Header -->
+            <header>
+                <h1>This is Header</h1>
+            </header>
+            <!-- the main content of the page -->
+            <section>
+                <!-- Employee Form -->
+                <form name="empForm">
+                    <!-- First Name -->
+                    <label for="fName">First Name:</label>
+                    <input type="text" id="fName" placeholder="Enter First Name"/>
+                    <br/>
+                    <!-- Last Name -->
+                    <label for="lName">Last Name:</label>
+                    <input type="text" id="lName" placeholder="Enter Last name"/>
+                    <br/>
+                    <!-- Email -->
+                    <label for="email">Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="email" id="email" placeholder="Enter Email"/>
+                    <br/>
+                    <label for="pwd">Password:</label>
+                    <input type="password" id="pwd" placeholder="Enter Password"/>
+                    <br/>
+                    <!-- Gender -->
+                    <input type="radio" id="male" name="gender" value="Male"/>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="FeMale"/>
+                    <label for="female">Female</label>
+                    <br/>
+                    <!-- favourite subjects which you can select multiple -->
+                    <strong>Select your fouvorite subjects:</strong>
+                    <input type="checkbox" name="subj" id="c" value="C"/>
+                    <label for="c">C</label>
+                    &nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="subj" id="java" value="Java"/>
+                    <label for="java">Java</label>
+                    &nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="subj" id="ui" value="UI"/>
+                    <label for="ui">UI</label>
+                    <br/>
+                    <!--submit button-->
+                    <button type="submit" id="submit" class="btn btn-primary">
+                        <span>Submit</span>
+                    </button>
+                    <!--reset/cancel-->
+                    <button type="reset" id="reset" class="btn btn-primary">
+                        <span>Cancel</span>
+                    </button>
+                </form>
+            </section>
+            <footer>
+                <h6>This is Footer</h6>
+            </footer>
+        </article>
+    </body>
+</html>
