@@ -9,6 +9,8 @@ label, input{
 }
 ul{
     list-style-type: none;
+    width: 359px;
+    margin: 10px auto;
 }
 ul > li{
     display: inline;
