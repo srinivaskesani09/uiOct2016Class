@@ -1,0 +1,78 @@
+body > article > header{
+    position: fixed;
+    width: 100%;
+}
+body > article > header ul{
+
+    background-color: #3e2a5f;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li{
+    float: left;
+}
+body > article > header li a{
+    color: white;
+}
+li a{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+body > article > section{
+    position: relative;
+    top: 120px;
+}
+
+article > footer{
+    position: fixed;
+    bottom: 0px;
+}
+form[name="newLicenseForm"]{
+
+    width: 359px;
+    margin: 0 auto;
+}
+button{
+    margin: 10px;
+    width: 120px;
+    height: 35px;
+    border-radius: 8px;
+}
+button > span{
+    font-size: 125%;
+    font-weight: bold;
+}
+button[type="submit"]{
+    background-color: #69e2fd;
+    border-color: #5ca941;
+    margin-left: 25px;
+}
+button[type="submit"]:hover{
+   background-color: #f9fe72;
+   border:5px solid #6b637d;
+}
+button[type="reset"]{
+    background-color: #f00;
+    color: #fff;
+}
+button[type="reset"]:hover{
+    background-color: #b6feb1;
+    border:5px solid #6b637d;
+    color: #000;
+}
+div > p{
+    color: #f00;
+}
+div + p{
+    color: #0f0;
+}
+div ~ p{
+    color: #00f;
+}
