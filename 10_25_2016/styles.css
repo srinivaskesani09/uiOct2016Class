@@ -1,85 +1,8 @@
-<<<<<<< HEAD
-body > article > header{
-    position: fixed;
-    width: 100%;
-}
-body > article > header ul{
-
-    background-color: #3e2a5f;
-}
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-li{
-    float: left;
-}
-body > article > header li a{
-    color: white;
-}
-li a{
-    display: block;
-    font-weight: bold;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-body > article > section{
-    position: relative;
-    top: 120px;
-}
-
-article > footer{
-    position: fixed;
-    bottom: 0px;
-}
-form[name="newLicenseForm"]{
-
-    width: 359px;
-    margin: 0 auto;
-}
-button{
-    margin: 10px;
-    width: 120px;
-    height: 35px;
-    border-radius: 8px;
-}
-button > span{
-    font-size: 125%;
-    font-weight: bold;
-}
-button[type="submit"]{
-    background-color: #69e2fd;
-    border-color: #5ca941;
-    margin-left: 25px;
-}
-button[type="submit"]:hover{
-   background-color: #f9fe72;
-   border:5px solid #6b637d;
-}
-button[type="reset"]{
-    background-color: #f00;
-    color: #fff;
-}
-button[type="reset"]:hover{
-    background-color: #b6feb1;
-    border:5px solid #6b637d;
-    color: #000;
-}
-div > p{
-    color: #f00;
-}
-div + p{
-    color: #0f0;
-}
-div ~ p{
-    color: #00f;
-}
-=======
 body{
     background-color: #fff;
+    /*background: url('smaller.jpg');
+    background-repeat: no-repeat;
+    background-size: 305%;*/
 }
 
 #nav-heading, #main-footer{
@@ -103,7 +26,11 @@ body{
     border-top-right-radius: 25px;
 }
 
-#nav-heading > nav,
+#nav-heading > nav{
+    left: 25%;
+    position: relative;
+}
+
 #main-footer > nav{
     left: 30%;
     position: relative;
@@ -166,6 +93,13 @@ body{
 }
 
 /*#nav-heading + section > form > h4*/
+form[name="newLicenseForm"]{
+    /*background: url('smaller.jpg');
+    background-repeat: no-repeat;
+    background-size: 305%;*/
+    background-color: #fff;
+}
+
 form[name="newLicenseForm"] > h4{
     position: absolute;
     top: -30px;
@@ -181,7 +115,10 @@ form[name="newLicenseForm"] div{
 
 input[type="text"],
 input[type="text"]:focus,
-input[type="text"]:hover{
+input[type="text"]:hover,
+input[type="email"],
+input[type="email"]:focus,
+input[type="email"]:hover{
     height: 30px;
     border-radius: 5px;
     border: 1px solid #ccccb9;
@@ -239,6 +176,85 @@ button[type="reset"]:hover{
     background-color: #6dfc4f;
 }
 
+input[name="fName"]:disabled{
+    /*White color*/
+    /*background-color: rgba(255,255,255,1);*/
+    background-color: rgba(0,0,0,1);
+}
+/*input[type="checkbox"]::before{
+    display: none;
+}
+
+input[type="checkbox"]::after{
+    content: 'Yes';
+}*/
+
+#requiredEmail{
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    color: #ff0000;
+}
+
+#invalidEmail{
+    position: absolute;
+    bottom: -15px;
+    left: 5px;
+    color: #ff0000;
+}
+
+input[type="email"]:valid,
+input[type="email"]:valid{
+    border: 1px solid #00ff00;
+}
+
+input[type="email"]:invalid,
+input[type="email"]:invalid{
+    border: 1px solid #ff0000;
+}
+
+input[type="email"]:valid ~ #requiredEmail,
+input[type="email"]:valid ~ #invalidEmail{
+    display: none;
+}
+
+input[type="email"]:invalid ~ #requiredEmail,
+input[type="email"]:invalid ~ #invalidEmail{
+    display: inline-block;
+}
+
+input[type="email"]:invalid + label{
+    top: 0;
+    color: #000;
+    font-size: 13px;
+}
+
+.backArrow,.homeBtn,.forwardArrow{
+    background: url('img_navsprites.gif');
+    width: 5px;
+    height: 5px;
+    background-size: 318%;
+    position: relative;
+    top: 10px;
+}
+
+.backArrow{
+    /*background-position: x-coordinate y-coordinate*/
+    background-position: -51px 1px;
+    left: -15%;
+}
+
+.homeBtn{
+    /*background-position: x-coordinate y-coordinate*/
+    background-position: -3px -1px;
+    left: -5%;
+}
+
+.forwardArrow{
+    /*background-position: x-coordinate y-coordinate*/
+    background-position: -98px 0;
+    right: -15%;
+}
 
 
 
@@ -250,4 +266,11 @@ button[type="reset"]:hover{
 
 
 
->>>>>>> d69235dee67f031181a045295f548ca9476d8be3
+
+
+
+
+
+
+
+

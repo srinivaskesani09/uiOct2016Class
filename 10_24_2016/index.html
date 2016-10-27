@@ -58,7 +58,7 @@
 
                             <!--First Name-->
                             <div>
-                                <input type="text" id="firstName" name="fName" required/>
+                                <input type="text" id="firstName" name="fName" disabled/>
                                 <label for="firstName">Enter your First Name</label>
                             </div>
                             <br />
@@ -67,6 +67,17 @@
                             <div>
                                 <input type="text" id="lastName" name="lName" required/>
                                 <label for="lastName">Enter your Last Name</label>
+                            </div>
+                            <br />
+
+                            <!--email-->
+                            <div>
+                                <input type="email" id="email" name="email" required/>
+                                <label for="email">Enter your Email</label>
+
+                                <!--for validation-->
+                                <label for="email" id="requiredEmail">Email is required</label>
+                                <label for="email" id="invalidEmail">Invalid Email added</label>
                             </div>
                             <br />
 
