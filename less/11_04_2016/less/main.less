@@ -1,0 +1,24 @@
+body{
+    background-color: @white;
+    font-size: 14px;
+    .ipad(660px, landscape);
+}
+
+.header{
+    &:extend(.light-background, .border-bottom);
+    &:hover{
+        box-shadow: 0 2px 5px @dark-gray;
+    }
+    .animation(all, 4s, linear);
+}
+
+.footer{
+    .dark-background();
+    .animation(all, 1s, cubic-bezier(.27,.87,.13,.44));
+}
+
+
+.responsive-mixin(@responsive);
+
+
+
