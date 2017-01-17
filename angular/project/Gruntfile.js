@@ -380,7 +380,8 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             '*.html',
             'images/{,*/}*.{webp}',
-            'styles/fonts/{,*/}*.*'
+            'styles/fonts/{,*/}*.*',
+            'templates/{,*/}*.*'
           ]
         }, {
           expand: true,
@@ -453,7 +454,7 @@ module.exports = function (grunt) {
     'concurrent:test',
     'postcss',
     'connect:test',
-    //'karma'
+    'karma'
   ]);
 
   grunt.registerTask('build', [
@@ -477,7 +478,7 @@ module.exports = function (grunt) {
   grunt.registerTask('default', [
     'newer:jshint',
     'newer:jscs',
-    //'test',
+    'test',
     'build'
   ]);
 };

@@ -9,19 +9,42 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/angular-ui-grid/ui-grid.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="projectApp">
+  <body ng-app="projectApp"> <!--$rootScope-->
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- Add your site or application content here -->
+  <!--<div ng-controller="projectController"> &lt;!&ndash;$scope&ndash;&gt;
+    &lt;!&ndash;Angular expressions&ndash;&gt;
+    <span>{{user.firstName}} {{user.lastName}} is {{11+10}} yrs old</span>
+  </div>
 
+  <div ng-controller="srikarController"> &lt;!&ndash;$scope&ndash;&gt;
+    <span ng-bind="user.firstName"></span>
+    <span ng-bind="user.lastName"></span>
+    <br>
+    <input type="text" id="firstName" name="firstName" placeholder="First Name" ng-model="user.firstName" ng-change="checkFirstName()">
+    <br>
+    <input type="text" id="lastName" name="lastName" placeholder="Last Name" ng-model="user.lastName">
+  </div>-->
+  <div class="alert alert-danger" role="alert" ng-if="errorField">
+    <span ng-bind="errorMessage"></span>
+  </div>
+
+  <div class="container">
+    <srikar-element ng-model="HomeCtrl.user.firstName"></srikar-element>
+  </div>
+
+
+  <div ng-view=""></div>
 
     <!------------------------------------------------>
 
@@ -50,11 +73,29 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-ui-grid/ui-grid.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <!--1. app.js-->
         <script src="scripts/app.js"></script>
+        <script src="scripts/services/httpInterceptor.js"></script>
+        <!--2. services-->
+        <script src="scripts/services/UserFactory.js"></script>
+        <script src="scripts/services/LoginService.js"></script>
+        <script src="scripts/services/URLFactory.js"></script>
+        <script src="scripts/services/APIService.js"></script>
+
+        <!--3. directives-->
+        <script src="scripts/directives/SrikarElement.js"></script>
+        <script src="scripts/directives/NumbersOnlyAttribute.js"></script>
+
+        <!--4. filters-->
+
+        <!--5. controllers-->
+        <script src="scripts/controllers/ProjectController.js"></script>
+        <script src="scripts/controllers/HomeController.js"></script>
         <!-- endbuild -->
-</body>
+  </body>
 </html>
