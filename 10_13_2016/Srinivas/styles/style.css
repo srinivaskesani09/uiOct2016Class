@@ -1,0 +1,31 @@
+/* below style for to display labels in block level*/
+label, strong, #phoneNumber, #tempSpan {
+    display: block;
+}
+/* below style for to display labels same line, this overwrites the above style*/
+.gender, .checkBox{
+    display: inline;
+}
+/* Form Style*/
+form {
+    border: 2px solid #000;
+    width: 30%;
+    margin-left: 5px;
+}
+/* below submit and reset styles*/
+.btn {
+    width: 85px;
+    height: 40px;
+    border-radius: 15px;
+}
+#reset {
+    background-color: #f00;
+}
+#submit {
+     background-color: #88f;
+}
+.spanBtn {
+    color: #000;
+    font-size: 130%;
+    font-weight: bold;
+}

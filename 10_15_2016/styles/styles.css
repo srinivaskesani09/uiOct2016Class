@@ -1,0 +1,38 @@
+form[name="newLicenseForm"]{
+    border: 2px solid #000;
+    width: 359px;
+    margin: 0 auto;
+}
+label, input{
+    display: block;
+    margin: 15px 30px;
+}
+ul{
+    list-style-type: none;
+    width: 359px;
+    margin: 10px auto;
+}
+ul > li{
+    display: inline;
+    padding: 5px;
+}
+button{
+    margin: 10px;
+    width: 120px;
+    height: 35px;
+    border-radius: 8px;
+}
+button > span{
+    color: #fff;
+    font-size: 125%;
+    font-weight: bold;
+}
+button[type="submit"]{
+    background-color: #60b044;
+    border-color: #5ca941;
+    margin-left: 25px;
+}
+button[type="reset"]{
+    background-color: #f00;
+}
+

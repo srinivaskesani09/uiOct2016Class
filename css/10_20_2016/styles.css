@@ -1,0 +1,253 @@
+<<<<<<< HEAD
+body > article > header{
+    position: fixed;
+    width: 100%;
+}
+body > article > header ul{
+
+    background-color: #3e2a5f;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li{
+    float: left;
+}
+body > article > header li a{
+    color: white;
+}
+li a{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+body > article > section{
+    position: relative;
+    top: 120px;
+}
+
+article > footer{
+    position: fixed;
+    bottom: 0px;
+}
+form[name="newLicenseForm"]{
+
+    width: 359px;
+    margin: 0 auto;
+}
+button{
+    margin: 10px;
+    width: 120px;
+    height: 35px;
+    border-radius: 8px;
+}
+button > span{
+    font-size: 125%;
+    font-weight: bold;
+}
+button[type="submit"]{
+    background-color: #69e2fd;
+    border-color: #5ca941;
+    margin-left: 25px;
+}
+button[type="submit"]:hover{
+   background-color: #f9fe72;
+   border:5px solid #6b637d;
+}
+button[type="reset"]{
+    background-color: #f00;
+    color: #fff;
+}
+button[type="reset"]:hover{
+    background-color: #b6feb1;
+    border:5px solid #6b637d;
+    color: #000;
+}
+div > p{
+    color: #f00;
+}
+div + p{
+    color: #0f0;
+}
+div ~ p{
+    color: #00f;
+}
+=======
+body{
+    background-color: #fff;
+}
+
+#nav-heading, #main-footer{
+    position: fixed;
+    background-color: #c4d7ff;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+#nav-heading{
+    top: 0;
+    border-bottom: 1px solid #ccccb9;
+}
+
+#main-footer{
+    height: 35px;
+    bottom: 0;
+    border-top: 1px solid #ccccb9;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+#nav-heading > nav,
+#main-footer > nav{
+    left: 30%;
+    position: relative;
+}
+
+#main-footer > nav{
+    top: -16px;
+}
+
+#nav-heading > nav > ul,
+#main-footer > nav > ul{
+    list-type: none;
+}
+
+#nav-heading > nav > ul li,
+#main-footer > nav > ul li{
+    display: inline-block;
+    padding: 20px;
+}
+
+#main-footer > nav > ul li{
+    padding: 10px 15px;
+}
+
+#nav-heading > nav > ul li:hover,
+#main-footer > nav > ul li:hover{
+    background-color: #f7f7f4;
+    cursor: pointer;
+}
+
+#nav-heading > nav > ul li a,
+#main-footer > nav > ul li a{
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#nav-heading > nav > ul li:hover > a,
+#main-footer > nav > ul li:hover > a{
+    color: #00dbdb;
+    text-decoration: underline;
+}
+
+#nav-heading + section{
+    position: absolute;
+    right: 25%;
+    margin: 120px 0;
+}
+
+#main-heading{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+}
+
+#nav-heading + section > form{
+    border: 1px solid #ccccb9;
+    padding: 40px;
+    position: relative;
+}
+
+/*#nav-heading + section > form > h4*/
+form[name="newLicenseForm"] > h4{
+    position: absolute;
+    top: -30px;
+    left: 15px;
+    background-color: #fff;
+    padding: 0 15px;
+}
+
+form[name="newLicenseForm"] div{
+    position: relative;
+    padding: 20px 0;
+}
+
+input[type="text"],
+input[type="text"]:focus,
+input[type="text"]:hover{
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccccb9;
+    outline: none;
+    width: 220px;
+    padding: 0 5px;
+}
+
+input + label{
+    position: absolute;
+    top: 27px;
+    left: 5px;
+    cursor: auto;
+    transition: all 0.3s linear;
+    color: #ccccb9;
+}
+
+input:focus + label,
+input:valid + label{
+    top: 0;
+    font-size:13px;
+    color: #000;
+}
+
+input[id="male"] + label{
+    position: relative;
+    top: 0;
+}
+
+#gender{
+    border: none;
+    padding: 0;
+}
+
+button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #ccccb9;
+    cursor: pointer;
+}
+
+button[type="submit"]{
+    background-color: #c4d7ff;
+}
+
+button[type="submit"]:hover{
+    background-color: #fbdf6b;
+}
+
+button[type="reset"]{
+    background-color: #fc1c29;
+}
+
+button[type="reset"]:hover{
+    background-color: #6dfc4f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> d69235dee67f031181a045295f548ca9476d8be3

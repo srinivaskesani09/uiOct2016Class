@@ -1,0 +1,76 @@
+.border-bottom,
+.header {
+  border-bottom: 1px solid #f6f6f6;
+  box-shadow: 0 2px 5px #f6f6f6;
+}
+.light-background,
+.header {
+  background-color: #fff;
+}
+body {
+  background-color: #fff;
+  font-size: 14px;
+}
+@media only screen and (max-width: 660px) and (orientation: landscape) {
+  body {
+    font-size: 10px;
+  }
+}
+.header {
+  -webkit-transition: all 4s linear;
+  -moz-transition: all 4s linear;
+  -ms-transition: all 4s linear;
+  -o-transition: all 4s linear;
+  transition: all 4s linear;
+}
+.header:hover {
+  box-shadow: 0 2px 5px #333;
+}
+.footer {
+  background-color: #000;
+  color: #fff;
+  -webkit-transition: all 1s cubic-bezier(0.27, 0.87, 0.13, 0.44);
+  -moz-transition: all 1s cubic-bezier(0.27, 0.87, 0.13, 0.44);
+  -ms-transition: all 1s cubic-bezier(0.27, 0.87, 0.13, 0.44);
+  -o-transition: all 1s cubic-bezier(0.27, 0.87, 0.13, 0.44);
+  transition: all 1s cubic-bezier(0.27, 0.87, 0.13, 0.44);
+}
+.footer:hover {
+  background-color: #fbfefd;
+}
+.col-1 {
+  width: 8.33333333%;
+}
+.col-2 {
+  width: 16.66666667%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33333333%;
+}
+.col-5 {
+  width: 41.66666667%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33333333%;
+}
+.col-8 {
+  width: 66.66666667%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33333333%;
+}
+.col-11 {
+  width: 91.66666667%;
+}
+.col-12 {
+  width: 100%;
+}

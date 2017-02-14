@@ -1,0 +1,44 @@
+<section class="container">
+  <header></header>
+  <article>
+
+    <div class="alert alert-danger" role="alert" ng-show="HomeCtrl.loginHasFailed">
+      Username/password combination is incorrect.
+    </div>
+
+    <form name="loginForm" novalidate ng-submit="HomeCtrl.loginUser()">
+      <div class="form-group">
+        <input type="text" class="form-control"
+               id="username" name="username"
+               placeholder="Enter username"
+               ng-model="HomeCtrl.user.username" required>
+
+        <span class="animate-if"
+              ng-if="loginForm.username.$invalid && loginForm.username.$dirty">
+          This field is mandatory.
+        </span>
+      </div>
+
+      <div class="form-group">
+        <input type="password" class="form-control"
+               id="password" name="password"
+               placeholder="Enter password"
+               ng-model="HomeCtrl.user.password" required>
+
+        <span class="animate-if"
+              ng-if="loginForm.password.$invalid && loginForm.password.$dirty">
+          This field is mandatory.
+        </span>
+      </div>
+      <div class="form-group">
+        <button type="submit"
+                class="btn btn-success"
+                ng-disabled="loginForm.$invalid">Submit</button>
+        <button type="reset" class="btn btn-danger">Reset</button>
+      </div>
+    </form>
+
+    <div ui-grid="{data: HomeCtrl.photos}"></div>
+  </article>
+  <footer></footer>
+</section>
