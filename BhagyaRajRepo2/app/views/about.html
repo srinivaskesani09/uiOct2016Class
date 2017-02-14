@@ -1,0 +1,43 @@
+<div ng-controller="AboutCtrl">
+  <div class="container">
+  <div class="row">
+    <div class="col-xs-4 col-xs-offset-4 text-center">
+      <h4>{{instruction}}</h4>
+    </div>
+   </div>
+
+ <div class="row">
+    <div class="col-xs-4 col-xs-offset-4">
+      Insert X:<input type="number" class="form-control" placeholder="Insert X" ng-model="xCoords"/>
+    </div>
+</div>
+
+ <div class="row">
+    <div class="col-xs-4 col-xs-offset-4">    
+      Insert Y:<input type="number" class="form-control" placeholder="Insert Y" ng-model="yCoords"/>
+    </div>
+ </div>
+
+ <div class="row">
+    <div class="col-xs-8 col-xs-offset-2">    
+      <table>
+
+        <tr>
+          <td class="text-center">Point ID</td>
+          <td class="text-center">Point coords</td>
+          <td class="text-center">Point Distance</td>
+        </tr>
+
+        <tr ng-repeat="point in points | orderBy:'dist'">
+          <td class="text-center">{{point.id}}</td>
+          <td class="text-center">{{point.value}}</td>
+          <td class="text-center">{{point.dist | number :2}}</td>
+        </tr>
+
+      </table>
+    </div>
+ </div>
+
+</div>
+  
+</div>
